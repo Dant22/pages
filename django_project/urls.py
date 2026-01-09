@@ -21,5 +21,5 @@ import pages
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("pages.urls")),  # new
+    path('', include("pages.urls")),  # new
 ]
