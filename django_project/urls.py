@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+import sys
+sys.path.insert(0, 'pages')
+import pages
 
 urlpatterns = [
     path("admin/", admin.site.urls),
