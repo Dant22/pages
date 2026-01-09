@@ -8,6 +8,9 @@ services:
     # startCommand: 'python -m gunicorn mysite.asgi:application -k uvicorn.workers.UvicornWorker'
     startCommand: gunicorn django_project.wsgi
     Instance Type: Free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
 #     PORT: "3000"
 #     envVars:
 #       - key: DATABASE_URL
